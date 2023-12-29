@@ -1,0 +1,16 @@
+---
+const { href, icon, title } = Astro.props;
+---
+
+<li
+  class=`${Astro.props.class} w-full relative backdrop-blur-xl border border-yellow-300/20 bg-black/1
+  20 rounded-2xl shadow shadow-black/50`
+>
+  <a
+    href={href}
+    class="w-full absolute object-fill flex justify-center flex-col gap-3 p-3"
+  >
+    <img src={icon} alt=`icon ${title}` class="w-screen" />
+    <span class="ml-2 text-center text-pretty text-white/60">{title}</span>
+  </a>
+</li>

@@ -1,4 +1,11 @@
 ---
+interface Props {
+  href: string;
+  icon?: string;
+  title: string;
+  class?: string;
+}
+
 const { href, icon, title } = Astro.props;
 ---
 
@@ -10,7 +17,7 @@ const { href, icon, title } = Astro.props;
     href={href}
     class="w-full absolute object-fill flex justify-center flex-col gap-3 p-3"
   >
-    <img src={icon} alt=`icon ${title}` class="w-screen" />
+    {icon && <img src={icon} alt=`icon ${title}` class="w-screen" /> }
     <span class="ml-2 text-center text-pretty text-white/60">{title}</span>
   </a>
 </li>

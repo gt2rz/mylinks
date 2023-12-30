@@ -10,14 +10,22 @@ const { href, icon, title } = Astro.props;
 ---
 
 <li
-  class=`${Astro.props.class} w-full relative backdrop-blur-xl border border-yellow-300/20 bg-black/1
-  20 rounded-2xl shadow shadow-black/50`
+  class=`${Astro.props.class} 
+  w-full 
+  relative 
+  backdrop-blur-xl 
+  border border-yellow-300/20 
+  rounded-2xl 
+  shadow shadow-black 
+  active:bg-yellow-500/60 
+  hover:bg-yellow-500/70 
+  p-4`
 >
   <a
     href={href}
-    class="w-full absolute object-fill flex justify-center flex-col gap-3 p-3"
+    class="w-full h-full relative object-fill flex justify-center flex-col gap-3 p-3"
   >
-    {icon && <img src={icon} alt=`icon ${title}` class="w-screen" /> }
+    {icon && <img src={icon} alt=`icon ${title}` class="w-full" /> }
     <span class="ml-2 text-center text-pretty text-white/60">{title}</span>
   </a>
 </li>

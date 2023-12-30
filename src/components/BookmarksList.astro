@@ -4,29 +4,44 @@ import Bookmark from "./Bookmark.astro";
 
 <section>
   <ul
-    class="w-full max-w-[800px] grid grid-cols-12 auto-rows-[14rem] gap-4 mx-auto py-4"
+    class="w-full
+      h-screen
+      max-w-[800px]
+      grid
+      grid-cols-12
+      auto-rows-[14rem]
+      sm:auto-rows-[18rem]
+      md:auto-rows-[16rem]
+      gap-4
+      mx-auto
+      py-4"
   >
     <Bookmark
-      class="col-span-6"
+      class="col-span-6 md:col-span-4"
       title="Github"
       icon="images/github.svg"
       href="https://github.com/gt2rz"
     />
     <Bookmark
-      class="col-span-6"
+      class="col-span-6 md:col-span-4"
       title="Linkedin"
       icon="images/linkedin.svg"
       href="https://www.linkedin.com/in/gt2rz"
     />
-    <Bookmark class="col-span-6" title="X" icon="images/X.svg" href="https://twitter.com/gt2rz_dev" />
     <Bookmark
-      class="col-span-6"
+      class="col-span-6 md:col-span-4"
+      title="X"
+      icon="images/X.svg"
+      href="https://twitter.com/gt2rz_dev"
+    />
+    <Bookmark
+      class="col-span-6 md:col-span-4"
       title="Tiktok"
       icon="images/tiktok.svg"
       href="https://www.tiktok.com/@angry_bull_85?lang=es"
     />
     <Bookmark
-      class="col-span-6"
+      class="col-span-6 md:col-span-4"
       title="Instagram"
       icon="images/instagram.svg"
       href="https://www.instagram.com/gt2rz/"
